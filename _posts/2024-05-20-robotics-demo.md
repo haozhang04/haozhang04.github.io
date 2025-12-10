@@ -5,6 +5,7 @@ categories: [技术, 演示]
 tags: [robotics, latex, code, video]
 math: true
 mermaid: true
+published: false
 ---
 
 你好！欢迎来到我的机器人技术博客。这是一篇演示文章，展示了如何在 Chirpy 主题中使用 LaTeX 公式、代码块以及嵌入 B 站视频。
