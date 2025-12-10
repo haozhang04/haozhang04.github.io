@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://haozhang04.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: haozhang04 # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -96,10 +96,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+# cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/img/ID/zh04.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
