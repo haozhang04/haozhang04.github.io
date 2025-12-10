@@ -144,7 +144,7 @@ tags: [ROBOCON]
 
 <div class="gallery-grid">
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2024/mmexport1720847536000.jpg" alt="瞬间1">
+        <img src="assets\img\competition\robocon2024\微信图片_20251210200516_394_12.jpg" alt="瞬间1">
     </div>
     <div class="gallery-item">
         <img src="/assets/img/competition/robocon2024/mmexport1720864075444.jpg" alt="瞬间2">
