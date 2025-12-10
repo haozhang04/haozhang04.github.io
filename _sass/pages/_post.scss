@@ -3,6 +3,12 @@
 @use '../abstracts/mixins' as mx;
 @use '../abstracts/placeholders';
 
+article {
+  background-color: var(--main-bg);
+  padding: 2.5rem 3rem;
+  border-radius: 0.75rem;
+}
+
 %-btn-post-nav {
   width: 50%;
   position: relative;

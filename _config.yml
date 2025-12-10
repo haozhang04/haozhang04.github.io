@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 机器人技术博客 # the main title
+title: 张浩的博客 # the main title
 
 tagline: # 探索机器人、感知与控制 # it will display as the subtitle
 

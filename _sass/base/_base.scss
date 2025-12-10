@@ -35,10 +35,32 @@ html {
   @include bp.lg {
     overflow-y: scroll;
   }
+
+  background-color: var(--main-bg);
 }
 
 body {
-  background: var(--main-bg);
+  background: transparent;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/assets/img/blog/mmexport1708510776126.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+  }
+
+  &.layout-post {
+    background: white;
+    &::before {
+      display: none;
+    }
+  }
+
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
   color: var(--text-color);
