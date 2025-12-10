@@ -134,7 +134,7 @@ tags: [ROBOCON]
     <span class="badge-item">机械组负责人</span>
   </div>
   <p style="color: var(--text-muted-color); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
-    凭借卓越的领导力与团队协作，创造历史性佳绩。
+    初次接触机器人。
   </p>
 </div>
 

@@ -137,7 +137,7 @@ tags: [ROBOCON]
     <span class="badge-item">管理10人队伍</span>
   </div>
   <p style="color: var(--text-muted-color); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
-    凭借卓越的领导力与团队协作，再次创造历史性佳绩。
+    凭借卓越的领导力与团队协作，再次创造历史性佳绩，并连续2年获得最佳队长。
   </p>
 </div>
 
