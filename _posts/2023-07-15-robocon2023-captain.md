@@ -142,13 +142,13 @@ tags: [ROBOCON]
 
 <div class="gallery-grid">
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2023/mmexport1702955423983.jpg" alt="瞬间1">
+        <img src="/assets/img/competition/robocon2023/robocon2023-cover.jpg" alt="瞬间1">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2023/mmexport1690994394116.jpg" alt="瞬间2">
+        <img src="/assets/img/competition/robocon2023/robocon2023-1.jpg" alt="瞬间2">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2023/mmexport1688963726642.jpg" alt="瞬间3">
+        <img src="/assets/img/competition/robocon2023/robocon2023-2.jpg" alt="瞬间3">
     </div>
 </div>
 

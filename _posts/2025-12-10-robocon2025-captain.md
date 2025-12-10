@@ -145,25 +145,31 @@ tags: [ROBOCON]
 
 <div class="gallery-grid">
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2025/mmexport1752555753566.jpg" alt="主图">
+        <img src="/assets/img/competition/robocon2025/robocon2025-cover.jpg" alt="主图">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2025/mmexport1752564994970.jpg" alt="瞬间2">
+        <img src="/assets/img/competition/robocon2025/robocon2025-1.jpg" alt="瞬间2">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2025/mmexport1752565067028.jpg" alt="瞬间3">
+        <img src="/assets/img/competition/robocon2025/robocon2025-2.jpg" alt="瞬间3">
     </div>
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2025/mmexporte94b5d26363e4710a31a3ec0f3759d8d_1752465071666.jpeg" alt="瞬间4">
+        <img src="/assets/img/competition/robocon2025/robocon2025-3.jpeg" alt="瞬间4">
     </div>
     <div class="gallery-item row-span-2">
-        <img src="/assets/img/competition/robocon2025/微信图片_20251210190325_391_12.jpg" alt="瞬间5">
+        <img src="/assets/img/competition/robocon2025/robocon2025-4.jpg" alt="瞬间5">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2025/微信图片_20251210190326_392_12.jpg" alt="瞬间6">
+        <img src="/assets/img/competition/robocon2025/robocon2025-5.jpg" alt="瞬间6">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2025/image.png" alt="瞬间7">
+        <img src="/assets/img/competition/robocon2025/robocon2025-6.png" alt="瞬间7">
+    </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2025/robocon2025-extra.png" alt="瞬间8">
+    </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2025/robocon2025-extra2.png" alt="瞬间9">
     </div>
 </div>
 

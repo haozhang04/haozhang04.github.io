@@ -20,7 +20,7 @@
    ```
 3. 启动本地服务器：
    ```bash
-   bundle exec jekyll serve
+   bundle exec jekyll serve --port 4001
    ```
 4. 访问 `http://127.0.0.1:4000`。
 

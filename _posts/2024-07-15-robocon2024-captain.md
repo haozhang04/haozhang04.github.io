@@ -144,22 +144,28 @@ tags: [ROBOCON]
 
 <div class="gallery-grid">
     <div class="gallery-item full-width">
-        <img src="assets/img/competition/robocon2024/微信图片_20251210200516_394_12.jpg" alt="瞬间1">
+        <img src="/assets/img/competition/robocon2024/robocon2024-cover.jpg" alt="瞬间1">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2024/mmexport1720864075444.jpg" alt="瞬间2">
+        <img src="/assets/img/competition/robocon2024/robocon2024-1.jpg" alt="瞬间2">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2024/mmexport1720864081497.jpg" alt="瞬间3">
+        <img src="/assets/img/competition/robocon2024/robocon2024-2.jpg" alt="瞬间3">
     </div>
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2024/mmexport1720864113931.jpg" alt="瞬间4">
+        <img src="/assets/img/competition/robocon2024/robocon2024-3.jpg" alt="瞬间4">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2024/mmexport1720889368572.jpg" alt="瞬间5">
+        <img src="/assets/img/competition/robocon2024/robocon2024-4.jpg" alt="瞬间5">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2024/mmexport1721281014936.jpg" alt="瞬间6">
+        <img src="/assets/img/competition/robocon2024/robocon2024-5.jpg" alt="瞬间6">
+    </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2024/robocon2024-extra.png" alt="瞬间7">
+    </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2024/robocon2024-extra2.png" alt="瞬间8">
     </div>
 </div>
 
