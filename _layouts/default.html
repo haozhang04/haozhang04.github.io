@@ -17,6 +17,11 @@ layout: compress
   {% include head.html %}
 
   <body class="layout-{{ page.layout }}">
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="/assets/img/blog/紫罗兰.mp4" type="video/mp4">
+    </video>
+
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">

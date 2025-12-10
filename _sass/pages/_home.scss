@@ -41,10 +41,10 @@
 
     .card-body {
       height: 100%;
-      padding: 1rem;
+      padding: 0.75rem;
 
       @include bp.md {
-        padding: 1.75rem 1.75rem 1.25rem;
+        padding: 1.25rem 1.25rem 0.75rem;
       }
 
       .card-title {
