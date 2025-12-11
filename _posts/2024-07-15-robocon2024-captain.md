@@ -167,6 +167,12 @@ tags: [ROBOCON]
     <div class="gallery-item">
         <img src="/assets/img/competition/robocon2024/robocon2024-extra2.png" alt="瞬间8">
     </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2024/robocon2024-6.jpg" alt="瞬间9">
+    </div>
+    <div class="gallery-item">
+        <img src="/assets/img/competition/robocon2024/robocon2024-7.jpg" alt="瞬间10">
+    </div>
 </div>
 
 <center><small style="color: var(--text-muted-color); opacity: 0.8;"><i>（点击图片可查看高清大图）</i></small></center>

@@ -24,35 +24,35 @@ export class UIController {
         document.body.appendChild(container);
 
         // Back to Blog Button
-        const backBtn = document.createElement('button');
-        backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Blog';
-        backBtn.className = 'icon-btn';
-        backBtn.style.padding = '8px 16px';
-        backBtn.style.backgroundColor = 'var(--glass-bg)';
-        backBtn.style.color = 'var(--text-primary)';
-        backBtn.style.border = '1px solid var(--glass-border)';
-        backBtn.style.borderRadius = '8px';
-        backBtn.style.cursor = 'pointer';
-        backBtn.style.backdropFilter = 'blur(10px)';
-        backBtn.onclick = () => {
+        this.backBtn = document.createElement('button');
+        this.backBtn.innerHTML = `<i class="fas fa-arrow-left"></i> ${window.i18n?.t('backToBlog') || 'Back to Blog'}`;
+        this.backBtn.className = 'icon-btn';
+        this.backBtn.style.padding = '8px 16px';
+        this.backBtn.style.backgroundColor = 'var(--glass-bg)';
+        this.backBtn.style.color = 'var(--text-primary)';
+        this.backBtn.style.border = '1px solid var(--glass-border)';
+        this.backBtn.style.borderRadius = '8px';
+        this.backBtn.style.cursor = 'pointer';
+        this.backBtn.style.backdropFilter = 'blur(10px)';
+        this.backBtn.onclick = () => {
             window.parent.location.href = '/';
         };
-        container.appendChild(backBtn);
+        container.appendChild(this.backBtn);
 
         // Robot Selector
         const selectorContainer = document.createElement('div');
         selectorContainer.style.position = 'relative';
         
-        const selectorBtn = document.createElement('button');
-        selectorBtn.innerHTML = '<i class="fas fa-robot"></i> Load Robot';
-        selectorBtn.className = 'icon-btn';
-        selectorBtn.style.padding = '8px 16px';
-        selectorBtn.style.backgroundColor = 'var(--glass-bg)';
-        selectorBtn.style.color = 'var(--text-primary)';
-        selectorBtn.style.border = '1px solid var(--glass-border)';
-        selectorBtn.style.borderRadius = '8px';
-        selectorBtn.style.cursor = 'pointer';
-        selectorBtn.style.backdropFilter = 'blur(10px)';
+        this.selectorBtn = document.createElement('button');
+        this.selectorBtn.innerHTML = `<i class="fas fa-robot"></i> ${window.i18n?.t('loadRobot') || 'Load Robot'}`;
+        this.selectorBtn.className = 'icon-btn';
+        this.selectorBtn.style.padding = '8px 16px';
+        this.selectorBtn.style.backgroundColor = 'var(--glass-bg)';
+        this.selectorBtn.style.color = 'var(--text-primary)';
+        this.selectorBtn.style.border = '1px solid var(--glass-border)';
+        this.selectorBtn.style.borderRadius = '8px';
+        this.selectorBtn.style.cursor = 'pointer';
+        this.selectorBtn.style.backdropFilter = 'blur(10px)';
         
         const dropdown = document.createElement('div');
         dropdown.style.position = 'absolute';
@@ -90,7 +90,7 @@ export class UIController {
             dropdown.appendChild(item);
         });
 
-        selectorBtn.onclick = (e) => {
+        this.selectorBtn.onclick = (e) => {
             e.stopPropagation();
             dropdown.style.display = dropdown.style.display === 'none' ? 'flex' : 'none';
         };
@@ -100,9 +100,21 @@ export class UIController {
             dropdown.style.display = 'none';
         });
 
-        selectorContainer.appendChild(selectorBtn);
+        selectorContainer.appendChild(this.selectorBtn);
         selectorContainer.appendChild(dropdown);
         container.appendChild(selectorContainer);
+    }
+
+    /**
+     * Update custom controls text
+     */
+    updateCustomControlsText() {
+        if (this.backBtn) {
+            this.backBtn.innerHTML = `<i class="fas fa-arrow-left"></i> ${window.i18n?.t('backToBlog') || 'Back to Blog'}`;
+        }
+        if (this.selectorBtn) {
+            this.selectorBtn.innerHTML = `<i class="fas fa-robot"></i> ${window.i18n?.t('loadRobot') || 'Load Robot'}`;
+        }
     }
 
     /**
@@ -347,6 +359,7 @@ export class UIController {
 
             onLanguageChanged?.(newLang);
             this.updateLanguageIcon(newLang);
+            this.updateCustomControlsText();
         });
     }
 
