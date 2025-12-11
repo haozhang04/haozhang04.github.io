@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<robot
+  name="zh_bot">
+
+<!-- 0.2 -->
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.465 0 0.4" 
+        rpy="0 0 0" />
+      <mass
+        value="200" />
+      <inertia
+        ixx="19.33"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="45.33"
+        iyz="0.0"
+        izz="59.33" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="-0.095 0 -0.15"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="1.6 1.0 0.3"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- base_link颜色 -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Purple</material>
+  </gazebo>
+
+
+<!-- =========================================涵推========================================= -->
+
+  <link
+    name="RF0">
+    <inertial>
+      <origin
+        xyz="0.0023406 -0.0016518 -0.14767"
+        rpy="0 0 0" />
+      <mass
+        value="6.5" />
+      <inertia
+        ixx="0.0529"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0529"
+        iyz="0.0"
+        izz="0.0208" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/RF0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.08" length="0.28"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="joint0"
+    type="fixed">
+    <origin
+      xyz="0.6047 -0.43671 -0.04739"
+      rpy="0.16029 0.21768 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF0" />
+    <!-- <axis
+      xyz="0 0 -1" /> -->
+  </joint>
+
+  <link
+    name="LF1">
+    <inertial>
+      <origin
+        xyz="0.00233195100255057 0.00162732509492236 -0.147642917138265"
+        rpy="0 0 0" />
+      <mass
+        value="6.5" />
+      <inertia
+        ixx="0.0529"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0529"
+        iyz="0.0"
+        izz="0.0208" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/LF1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.08" length="0.28"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="joint1"
+    type="fixed">
+    <origin
+      xyz="0.604696931292277 0.436722940576791 -0.0473901548920162"
+      rpy="-0.160290015126688 0.217683299669159 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF1" />
+    <!-- <axis
+      xyz="0 0 -1" /> -->
+  </joint>
+
+  <link
+    name="LH2">
+    <inertial>
+      <origin
+        xyz="0.0275567633576045 0.00109661730481131 -0.144623002135796"
+        rpy="0 0 0" />
+      <mass
+        value="6.5" />
+      <inertia
+        ixx="0.0529"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0529"
+        iyz="0.0"
+        izz="0.0208" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/LH2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.08" length="0.28"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="joint2"
+    type="fixed">
+    <origin
+      xyz="-0.611604847132862 0.441698528983451 -0.050206810202805"
+      rpy="-0.165170447844218 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LH2" />
+    <!-- <axis
+      xyz="0.200237230601653 0 -0.979747442701934" /> -->
+  </joint>
+
+  <link
+    name="RH3">
+    <inertial>
+      <origin
+        xyz="0.027556670090006 -0.00109309808291025 -0.14459432166978"
+        rpy="0 0 0" />
+      <mass
+        value="6.5" />
+      <inertia
+        ixx="0.0529"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0529"
+        iyz="0.0"
+        izz="0.0208" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/RH3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.08" length="0.28"/>
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="joint3"
+    type="fixed">
+    <origin
+      xyz="-0.611604389313919 -0.441682804261644 -0.0502066838133057"
+      rpy="0.165170447844218 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RH3" />
+    <!-- <axis
+      xyz="0.200237230601654 0 -0.979747442701934" /> -->
+  </joint>
+
+  <!-- 颜色 -->
+  <gazebo reference="RF0">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+  <gazebo reference="LF1">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+  <gazebo reference="LH2">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+  <gazebo reference="RH3">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+
+<!-- =========================================left_wheel_link========================================= -->
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="4.8186015848134E-06 -0.0399986128209614 3.6749762934718E-06"
+        rpy="0 0 0" />
+      <mass
+        value="4" />
+      <inertia
+        ixx="0.0185"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0328"
+        iyz="0.0"
+        izz="0.0185" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <!-- ★ 侧面标牌：白色薄盒，稍微伸出轮侧，随轮一起旋转 -->
+    <visual name="left_wheel_marker">
+      <origin xyz="0.15 -0.04 0" rpy="0 0 0"/>
+      <geometry><box size="0.07 0.10 0.03"/></geometry>
+      <material name="marker_mat"><color rgba="1 1 1 1"/></material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 -0.04 0" rpy="1.5708 0  0"/>
+      <geometry><cylinder radius="0.128" length="0.08"/></geometry>
+    </collision>
+
+  </link>
+
+
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.1355 0.47901 -0.3"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  
+  <gazebo reference="left_wheel_link"><mu1>1.7</mu1><mu2>1.7</mu2></gazebo>
+  <gazebo reference="left_wheel_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+<!-- =========================================right_wheel_link========================================= -->
+
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="-7.80542907308224E-07 0.039998613532473 6.00903970805061E-06"
+        rpy="0 0 0" />
+      <mass
+        value="4.0" />
+      <inertia
+        ixx="0.0185"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0328"
+        iyz="0.0"
+        izz="0.0185" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+
+    <!-- ★ 右侧标牌（与左对称） -->
+    <visual name="right_wheel_marker">
+      <origin xyz="0.15 0.04 0" rpy="0 0 0"/>
+      <geometry><box size="0.07 0.10 0.03"/></geometry>
+      <material name="marker_mat"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0.04 0" rpy="1.5708 0  0"/>
+      <geometry><cylinder radius="0.128" length="0.08"/></geometry>
+    </collision>
+
+  </link>
+
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.1355 -0.47899 -0.3"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+    <!-- <dynamics
+      friction="0.8" /> -->
+  </joint>
+
+  <gazebo reference="right_wheel_link"><mu1>1.7</mu1><mu2>1.7</mu2></gazebo>
+  <gazebo reference="right_wheel_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+<!-- =========================================steering_wheel_link========================================= -->
+  <link
+    name="steering_wheel_link">
+    <inertial>
+      <origin
+        xyz="-6.98189367431823E-09 0.000685095143032943 -0.124490103299074"
+        rpy="0 0 0" />
+      <mass
+        value="5" />
+      <inertia
+        ixx="0.034"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.034"
+        iyz="0.0"
+        izz="0.016" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/steering_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.949019607843137 0.909803921568627 1" />
+      </material>
+    </visual>
+
+   <!-- ★ 上侧标牌（改为箭头） -->
+    <!-- 箭杆：白色长方条 -->
+    <visual name="steering_wheel_arrow_shaft">
+      <origin xyz="0.0 0 0.2" rpy="0 0 1.5708"/>
+      <geometry><box size="0.04 0.15 0.05"/></geometry> <!-- 细长条作为箭杆 -->
+      <material name="marker_mat"/>
+    </visual>
+    
+    <!-- 箭头头部：旋转45度的短方条 -->
+    <visual name="steering_wheel_arrow_head">
+      <origin xyz="0.06 0.0 0.2" rpy="0 0 2.3562"/> <!-- 0.7854=π/4弧度(45°) -->
+      <geometry><box size="0.05 0.05 0.05"/></geometry> <!-- 短方条作为箭头 -->
+      <material name="marker_mat"/>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.08" length="0.25"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+  <joint
+    name="steering_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="-0.66013 0 -0.184"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="steering_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit lower="-3.1416" upper="3.1416" effort="5" velocity="1.0"/> 
+  </joint>
+
+  <gazebo reference="steering_wheel_link">
+    <material>Gazebo/Gold</material>
+  </gazebo>
+
+  <link
+    name="caster_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.96177979416845E-09 -1.32293065391309E-10 1.5746578346798E-09"
+        rpy="0 0 0" />
+      <mass
+        value="4" />
+      <inertia
+        ixx="0.019"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.020"
+        iyz="0.0"
+        izz="0.019" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="C:/Users/29544/Desktop/uwbot_gui/uwbot_gui_simple_real/resource/robot_description/uwrobot/meshes/caster_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.223529411764706 0.223529411764706 0.223529411764706 1" />
+      </material>
+    </visual>
+
+    <!-- ★ 侧面标牌：白色薄盒，稍微伸出轮侧，随轮一起旋转 -->
+    <visual name="caster_wheel_marker">
+      <origin xyz="0.05 0 0" rpy="0 1.5708 0"/>
+      <geometry><box size="0.01 0.04 0.02"/></geometry>
+      <material name="marker_mat"><color rgba="1 1 1 1"/></material>
+    </visual>
+    
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0  0"/>
+      <geometry><cylinder radius="0.10" length="0.165"/></geometry>
+    </collision>
+
+  </link>
+
+  <joint
+    name="caster_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.1435"
+      rpy="0 0 0" />
+    <parent
+      link="steering_wheel_link" />
+    <child
+      link="caster_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+    <!-- <dynamics
+      friction="0.8" /> -->
+  </joint>
+
+  <gazebo reference="caster_wheel_link">
+    <material>Gazebo/Gold</material>
+    <mu1>1.7</mu1> <mu2>1.7</mu2>
+  </gazebo>
+
+<!-- ──────────────────────────── Sensors ──────────────────────────── -->
+  <!-- IMU (500 Hz, noiseless示例，可在插件内配置噪声) -->
+  <link name="imu_link">
+    <visual>
+      <geometry><sphere radius="0.03"/></geometry>
+      <material name="blue_imu"><color rgba="0 0 1 1"/></material>
+    </visual>
+  </link>
+  <joint name="imu_fixed_joint" type="fixed">
+    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child  link="imu_link"/>
+  </joint>
+
+  <gazebo reference="imu_link">
+      <sensor name="imu_sensor" type="imu">
+          <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+              <ros>
+                  <namespace>/</namespace>
+                  <remapping>~/out:=imu/data</remapping>
+              </ros>
+              <initial_orientation_as_reference>false</initial_orientation_as_reference>
+          </plugin>
+          <update_rate>500</update_rate>
+          <always_on>true</always_on>
+          <!-- 六轴噪声设置 -->
+          <imu>
+              <angular_velocity>
+                  <x>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>2e-4</stddev>
+                          <bias_mean>0.0000075</bias_mean>
+                          <bias_stddev>0.0000008</bias_stddev>
+                      </noise>
+                  </x>
+                  <y>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>2e-4</stddev>
+                          <bias_mean>0.0000075</bias_mean>
+                          <bias_stddev>0.0000008</bias_stddev>
+                      </noise>
+                  </y>
+                  <z>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>2e-4</stddev>
+                          <bias_mean>0.0000075</bias_mean>
+                          <bias_stddev>0.0000008</bias_stddev>
+                      </noise>
+                  </z>
+              </angular_velocity>
+              <linear_acceleration>
+                  <x>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                          <bias_mean>0.1</bias_mean>
+                          <bias_stddev>0.001</bias_stddev>
+                      </noise>
+                  </x>
+                  <y>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                          <bias_mean>0.1</bias_mean>
+                          <bias_stddev>0.001</bias_stddev>
+                      </noise>
+                  </y>
+                  <z>
+                      <noise type="gaussian">
+                          <mean>0.0</mean>
+                          <stddev>1.7e-2</stddev>
+                          <bias_mean>0.1</bias_mean>
+                          <bias_stddev>0.001</bias_stddev>
+                      </noise>
+                  </z>
+              </linear_acceleration>
+          </imu>
+      </sensor>
+  </gazebo>
+
+  <gazebo reference="imu_link">
+    <material>Gazebo/Blue</material>
+    <mu1>1.7</mu1> <mu2>1.7</mu2>
+  </gazebo>
+  <!-- ─────────────────────── ros2_control transmissions ─────────────── -->
+  <transmission name="left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_wheel_joint">
+      <hardwareInterface>hardware_interface/velocity</hardwareInterface>
+    </joint>
+    <actuator name="left_wheel_motor">
+      <hardwareInterface>hardware_interface/velocity</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_wheel_joint">
+      <hardwareInterface>hardware_interface/velocity</hardwareInterface>
+    </joint>
+    <actuator name="right_wheel_motor">
+      <hardwareInterface>hardware_interface/velocity</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="steering_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="steering_wheel_joint">
+      <hardwareInterface>hardware_interface/position</hardwareInterface>
+    </joint>
+    <actuator name="steering_motor">
+      <hardwareInterface>hardware_interface/position</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- ──────────────────────── Gazebo 插件 ──────────────────────────── -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <parameters>/home/zh/uwbot_ctl/src/robot_description/uwrobot/config/controllers.yaml</parameters>    
+    </plugin>
+  </gazebo>
+
+  <!-- ──────────────────────── Gazebo 位置姿态 ──────────────────────────── -->
+  <gazebo>
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <body_name>base_link</body_name>
+      <frameName>base_link</frameName>
+      <referenceFrame>world</referenceFrame>
+    </plugin>
+  </gazebo>
+
+  <!-- Show the trajectory of trunk center. -->
+  <gazebo>
+      <plugin name="3dplot" filename="libLinkPlot3DPlugin.so">
+          <frequency>10</frequency>
+          <plot>
+              <link>base_link</link>
+              <pose>0 0 0 0 0 0</pose>
+              <material>Gazebo/Yellow</material>
+          </plot>
+      </plugin>
+  </gazebo>
+
+  <!-- ─────────────────────── ros2_control 配置 ─────────────────────── -->
+  <ros2_control name="robot_ctr" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="steering_wheel_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>

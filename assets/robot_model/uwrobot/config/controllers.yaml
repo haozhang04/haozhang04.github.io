@@ -1,0 +1,38 @@
+controller_manager:
+  ros__parameters:
+    # 整体更新频率
+    update_rate: 500
+    use_sim_time: true
+
+    # ------------------- Joint State Broadcaster -------------------
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # ------------------- 速度控制器 (左右轮) -------------------
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+    # ------------------- 转向控制器 (转向轮) -------------------
+    steering_controller:
+      type: position_controllers/JointGroupPositionController
+
+velocity_controller:
+  ros__parameters:
+    joints:
+      - left_wheel_joint
+      - right_wheel_joint
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+
+steering_controller:
+  ros__parameters:
+    joints:
+      - steering_wheel_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
