@@ -145,7 +145,7 @@ tags: [ROBOCON]
 
 <div class="gallery-grid">
     <div class="gallery-item full-width">
-        <img src="/assets/img/competition/robocon2025/robocon2025-cover.jpg" alt="主图">
+        <img src="/assets/img/competition/robocon2025/robocon2025-5.jpg" alt="主图">
     </div>
     <div class="gallery-item">
         <img src="/assets/img/competition/robocon2025/robocon2025-1.jpg" alt="瞬间2">
@@ -160,7 +160,7 @@ tags: [ROBOCON]
         <img src="/assets/img/competition/robocon2025/robocon2025-4.jpg" alt="瞬间5">
     </div>
     <div class="gallery-item">
-        <img src="/assets/img/competition/robocon2025/robocon2025-5.jpg" alt="瞬间6">
+        <img src="/assets/img/competition/robocon2025/robocon2025-cover.jpg" alt="瞬间6">
     </div>
     <div class="gallery-item">
         <img src="/assets/img/competition/robocon2025/robocon2025-6.png" alt="瞬间7">
