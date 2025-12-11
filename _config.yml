@@ -216,6 +216,13 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
+  - "robot_viewer/src"
+  - "robot_viewer/public"
+  - "robot_viewer/node_modules"
+  - "robot_viewer/.github"
+  - "robot_viewer/.gitignore"
+  - "robot_viewer/index.html"
+  - "robot_viewer/pnpm-lock.yaml"
 
 jekyll-archives:
   enabled: [categories, tags]
