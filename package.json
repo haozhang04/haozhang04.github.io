@@ -22,6 +22,8 @@
     "lint:js": "eslint",
     "lint:scss": "stylelint _sass/**/*.scss",
     "lint:fix:scss": "npm run lint:scss -- --fix",
+    "build:robot": "cd robot_viewer && npm install && npm run build",
+    "dev": "concurrently \"cd robot_viewer && npm run build -- --watch\" \"bundle exec jekyll serve\"",
     "test": "npm run lint:js && npm run lint:scss",
     "prepare": "husky"
   },
