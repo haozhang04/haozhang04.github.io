@@ -6,6 +6,7 @@ categories: [formulation]
 tags: [underwater robot, dynamics, control]
 description: 水下机器人涵推构型分析，包括电机混控、四棱锥模型、长方形模型及 SO3 控制器设计。
 math: true
+mermaid: true
 ---
 
 ## 1.1 电机混控
