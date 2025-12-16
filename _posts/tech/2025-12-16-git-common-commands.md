@@ -15,7 +15,7 @@ Git 是目前世界上最先进的分布式版本控制系统。本文整理了�
 
 ```bash
 # 设置用户名
-git config --global user.name "zhnghao"
+git config --global user.name "zhanghao"
 
 # 设置用户邮箱
 git config --global user.email "2954474870@qq.com"
