@@ -28,6 +28,9 @@ git config --global https.proxy https://127.0.0.1:17890
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 
+# 配置 Git 记住用户名和密码
+git config --global credential.helper store
+
 # 查看当前配置
 git config --list
 ```
