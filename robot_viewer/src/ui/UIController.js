@@ -71,7 +71,9 @@ export class UIController {
         const robots = [
             { name: 'Steam Robot', path: '/assets/robot_model/steam/urdf/steam.urdf' },
             { name: 'Brook Robot', path: '/assets/robot_model/brook/brook/urdf/brook.urdf' },
-            { name: 'UW Robot', path: '/assets/robot_model/uwrobot/urdf/uwrobot.urdf' }
+            { name: 'UW Robot', path: '/assets/robot_model/uwrobot/urdf/uwrobot.urdf' },
+            { name: 'Tita Robot', path: '/assets/robot_model/tita/urdf/robot.urdf' },
+            { name: 'D1H Robot', path: '/assets/robot_model/d1h/urdf/robot.urdf' }
         ];
 
         robots.forEach(robot => {
