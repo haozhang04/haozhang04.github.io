@@ -69,6 +69,7 @@ export class UIController {
         dropdown.style.backdropFilter = 'blur(10px)';
 
         const robots = [
+            { name: 'go1 Robot', path: '/assets/robot_model/go1/urdf/go1_new_2.urdf' },
             { name: 'Steam Robot', path: '/assets/robot_model/steam/urdf/steam.urdf' },
             { name: 'Brook Robot', path: '/assets/robot_model/brook/brook/urdf/brook.urdf' },
             { name: 'UW Robot', path: '/assets/robot_model/uwrobot/urdf/uwrobot.urdf' },
