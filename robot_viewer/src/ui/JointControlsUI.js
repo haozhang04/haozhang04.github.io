@@ -12,6 +12,8 @@ export class JointControlsUI {
         this.initialJointValues = new Map(); // Save initial joint positions when model loads
         this.codeEditorManager = null; // Code editor manager reference
         this.isUpdatingFromEditor = false; // Flag to prevent circular updates
+        this.bulkInputSetup = false; // Flag to check if bulk input listeners are set
+        this.currentModel = null; // Reference to current model
     }
 
     /**
@@ -87,9 +89,74 @@ export class JointControlsUI {
     }
 
     /**
+     * Setup bulk input listener
+     */
+    setupBulkInput() {
+        if (this.bulkInputSetup) return;
+
+        const applyBtn = document.getElementById('apply-bulk-input');
+        const inputArea = document.getElementById('bulk-joint-input');
+
+        if (!applyBtn || !inputArea) return;
+
+        applyBtn.addEventListener('click', () => {
+            const text = inputArea.value;
+            if (!text) return;
+
+            // Regex to match 'key': value or "key": value
+            // Captures value until comma, hash or newline
+            const regex = /['"]([\w_]+)['"]\s*:\s*([^,#\n]+)/g;
+            let match;
+            let count = 0;
+
+            if (!this.currentModel) return;
+
+            while ((match = regex.exec(text)) !== null) {
+                const jointName = match[1];
+                const valueStr = match[2].trim();
+                const value = parseFloat(valueStr);
+
+                if (!isNaN(value)) {
+                    const joint = this.currentModel.joints.get(jointName);
+                    if (joint && joint.type !== 'fixed') {
+                        // Update joint
+                        ModelLoaderFactory.setJointAngle(this.currentModel, jointName, value);
+                        joint.currentValue = value;
+
+                        // Update slider if exists
+                        const slider = document.querySelector(`input[data-joint="${jointName}"]`);
+                        if (slider) {
+                            slider.value = value;
+                            // Update display
+                            const control = slider.closest('.joint-control');
+                            if (control && control._updateDisplay) {
+                                control._updateDisplay();
+                            }
+                        }
+                        count++;
+                    }
+                }
+            }
+
+            if (count > 0) {
+                this.sceneManager.redraw();
+                this.sceneManager.render();
+                if (this.sceneManager.onMeasurementUpdate) {
+                    this.sceneManager.onMeasurementUpdate();
+                }
+            }
+        });
+
+        this.bulkInputSetup = true;
+    }
+
+    /**
      * Setup joint controls
      */
     setupJointControls(model) {
+        this.currentModel = model;
+        this.setupBulkInput();
+
         const container = document.getElementById('joint-controls');
         if (!container) return;
 

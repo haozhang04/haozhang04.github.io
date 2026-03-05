@@ -114,6 +114,9 @@ export const translations = {
         'noSupportedFiles': '未找到支持的文件（URDF, MJCF, DAE, STL, OBJ）',
         'loadSuccess': '模型加载成功',
         'cannotLoadMesh': '无法加载 mesh 文件',
+        'bulkInput': '输入 (Python Dict)',
+        'apply': '应用',
+        'bulkInputPlaceholder': "'joint_name': value,",
 
         // 编辑器消息
         'unsavedChanges': '您有未保存的更改，确定要关闭吗？',
@@ -235,6 +238,9 @@ export const translations = {
         'noSupportedFiles': 'No supported files found (URDF, MJCF, DAE, STL, OBJ)',
         'loadSuccess': 'Model loaded successfully',
         'cannotLoadMesh': 'Cannot load mesh file',
+        'bulkInput': 'Bulk Input (Python Dict)',
+        'apply': 'Apply',
+        'bulkInputPlaceholder': "'joint_name': value,",
 
         // Editor messages
         'unsavedChanges': 'You have unsaved changes. Are you sure you want to close?',
