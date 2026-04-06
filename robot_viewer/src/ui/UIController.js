@@ -74,6 +74,7 @@ export class UIController {
             { name: 'Brook Robot', path: '/assets/robot_model/brook/brook/urdf/brook.urdf' },
             { name: 'UW Robot', path: '/assets/robot_model/uwrobot/urdf/uwrobot.urdf' },
             { name: 'duow Robot', path: '/assets/robot_model/duow/urdf/duow.urdf' },
+            { name: 'duobw Robot', path: '/assets/robot_model/duoBw/urdf/duoBw_24.urdf' },
             { name: 'Tita Robot', path: '/assets/robot_model/tita/urdf/robot.urdf' },
             { name: 'D1H Robot', path: '/assets/robot_model/d1h/urdf/robot.urdf' },
             { name: 'Go2 Robot', path: '/assets/robot_model/go2/urdf/go2_description.urdf' },
