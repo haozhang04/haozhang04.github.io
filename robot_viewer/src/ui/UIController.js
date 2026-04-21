@@ -69,16 +69,16 @@ export class UIController {
         dropdown.style.backdropFilter = 'blur(10px)';
 
         const robots = [
-            { name: 'go1 Robot', path: '/assets/robot_model/go1/urdf/go1_new_2.urdf' },
+            { name: 'Go1 Robot', path: '/assets/robot_model/go1/urdf/go1_new_2.urdf' },
             { name: 'Steam Robot', path: '/assets/robot_model/steam/urdf/steam.urdf' },
-            { name: 'Brook Robot', path: '/assets/robot_model/brook/brook/urdf/brook.urdf' },
+            // { name: 'Brook Robot', path: '/assets/robot_model/brook/brook/urdf/brook.urdf' },
             { name: 'UW Robot', path: '/assets/robot_model/uwrobot/urdf/uwrobot.urdf' },
-            { name: 'duow Robot', path: '/assets/robot_model/duow/urdf/duow.urdf' },
-            { name: 'duobw Robot', path: '/assets/robot_model/duoBw/urdf/duoBw_24.urdf' },
+            { name: 'Duow Robot', path: '/assets/robot_model/duow/urdf/duow.urdf' },
+            { name: 'DuoBw Robot', path: '/assets/robot_model/duoBw/urdf/duoBw_24.urdf' },
             { name: 'Tita Robot', path: '/assets/robot_model/tita/urdf/robot.urdf' },
             { name: 'D1H Robot', path: '/assets/robot_model/d1h/urdf/robot.urdf' },
-            { name: 'Go2 Robot', path: '/assets/robot_model/go2/urdf/go2_description.urdf' },
-            { name: 'Go2W Robot', path: '/assets/robot_model/go2w/urdf/go2w_description.urdf' }
+            { name: 'Go2 Robot', path: '/assets/robot_model/go2/urdf/go2.urdf' },
+            { name: 'Go2W Robot', path: '/assets/robot_model/go2w/urdf/go2w.urdf' }
         ];
 
         robots.forEach(robot => {
