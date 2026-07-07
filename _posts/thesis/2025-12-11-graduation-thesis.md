@@ -6,6 +6,7 @@ tags: [Graduation, Thesis]
 # description: 本科毕业设计论文完整版归档，提供在线预览及 PDF 格式下载。
 toc: true
 pin: true
+published: false
 ---
 
 ## 📄 在线预览
